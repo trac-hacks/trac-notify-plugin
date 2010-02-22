@@ -1,0 +1,12 @@
+build.sh
+setup.py
+TracNotify.egg-info/PKG-INFO
+TracNotify.egg-info/SOURCES.txt
+TracNotify.egg-info/dependency_links.txt
+TracNotify.egg-info/entry_points.txt
+TracNotify.egg-info/top_level.txt
+TracNotify.egg-info/trac_plugin.txt
+notify/__init__.py
+notify/notify.py
+notify/htdocs/css/notify.css
+notify/templates/notify.cs

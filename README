@@ -1,0 +1,32 @@
+Trac Notify Plugin
+==================
+
+What It Is
+==========
+Trac Notify Plugin is a Trac plugin that "notifies" (calls) a PHP (or any other web-based page) script when a ticket is created, modified or deleted. It also passes along various bits of information about the ticket that was altered.
+
+Building
+========
+
+Trac accepts plugins in the form of Python Eggs. These are just zip files with some config information and are easy to create. One important note is that they must be compiled for the version of Python on which the target Trac system is running. That is; if you want the plugin to work on a Trac instance which is running on-top of Python 2.5, the egg must be built with Python 2.5. The same goes for version 2.4.
+
+You will need something called Setup Tools. If you don't have this, fret not - if you're running Ubuntu. Simply run:
+
+sudo apt-get install python-setuptools
+
+Next, change to the directory where the Trac Notify Plugin code lives. You should see something like this:
+
+build.sh
+notify
+setup.py
+TracNotify.egg-info
+System wide installation
+
+If you wish to install the Plugin system wide, run:
+
+sh build.sh
+
+Then edit (or create) /usr/share/trac/conf/trac.ini, it should look like (or at least contain):
+
+[components]
+notify.* = enabled
